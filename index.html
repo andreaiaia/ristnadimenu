@@ -3,13 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Menù Ristorante Nadì</title>
 </head>
 <body>
+  <a href="htt://www.ristorantenadi.com" id="logo"><img src="img/logo-nadi.png" alt="logo"></a>
   <div id="language">
-    <a href="index-en.html"><img src="img/lang_icons/en.png" alt="english"></a>
-    <a href="index-jp.html"><img src="img/lang_icons/ru.png" alt="japanese"></a>
-    <a href="index-ru.html"><img src="img/lang_icons/jp.png" alt="russian"></a>
+    <div class="card">
+      <a href="menus/it-en-jp.pdf">
+        <img src="img/lang_icons/it-en-jp.png" class="lang" alt="italian, english, japanese">
+        <div class="links">
+          <h2>Italiano</h2>
+          <h2>English</h2>
+          <h2>日本語</h2>
+        </div>
+      </a>
+    </div>
+    <div class="card ru">
+      <a href="menus/ru.pdf">
+        <img src="img/lang_icons/ru.png" class="lang" alt="russian">
+        <h2>русский</h2>
+      </a>
+    </div>
   </div>
 </body>
 </html>
