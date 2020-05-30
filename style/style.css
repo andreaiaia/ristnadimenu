@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+
+:root {
+  --primary-color: #2c140a;
+}
+html {
+  font-family: 'Cormorant Garamond', serif;
+  height: 100%;
+}
+body {
+  background-color: #cca866;
+}
+a {
+  display: grid;
+  text-align: center;
+  color: var(--primary-color);
+  margin: .6rem;
+}
+.menuBtn {
+  padding: 5px;
+  background-color: rgba(255,255,255,.2);
+  font-size: 2rem;
+  color: var(--primary-color);
+  border: 1.5px solid var(--primary-color);
+  border-radius: .8rem;
+  box-shadow: 1px 2px 5px 0px rgba(0,0,0,1);
+}
+#logo {
+  display: grid;
+  justify-items: center;
+}
+#language {
+  display: none;
+}
+#courses {
+  margin-top: 20px;
+}
