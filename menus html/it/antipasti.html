@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../style/style.css">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.1.45/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="../../style/navigation.css">
+  <link rel="stylesheet" href="../../style/style.css">
   <title>Antipasti</title>
 </head>
 <body>
@@ -17,14 +18,74 @@
   </div>
   
   <!-- Use any element to open the sidenav -->
-  <span onclick="openNav()">open</span>
   
   <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
   <div id="main">
-    <div id="logo">
-      <img src="../../img/logo-nadi.png" alt="logo">
+    <div id="nav">
+      <p onclick="openNav()" class="mdi mdi-menu"></p>
+      <div id="logo" class="inside">
+        <img src="../../img/logo-nadi.png" alt="logo">
+      </div>
     </div>
-  </div> 
+
+    <div id="content">
+      <div class="dish">
+        <h3>Antipasto Nadì</h3>
+        <h3>€ 14</h3>
+        <p>Peperoni, zucchine, melanzane</p>
+      </div>
+      <div class="dish">
+        <h3>Antipasto Lucano</h3>
+        <h3>€ 12</h3>
+        <p>Mix di salumi e formaggi lucani</p>
+      </div>
+      <div class="dish">
+        <h3>Carpaccio di Manzo al tartufo nero lucano</h3>
+        <h3>€ 18</h3>
+        <p>Con limone e parmigiano</p>
+      </div>
+      <div class="dish">
+        <h3>Prosciutto Crudo di Parma con Burratina</h3>
+        <h3>€ 12</h3>
+        <p></p>
+      </div>
+      <div class="dish">
+        <h3>Prosciutto Crudo di Parma con Melone</h3>
+        <h3>€ 12</h3>
+        <p></p>
+      </div>
+      <div class="dish">
+        <h3>Affettato misto di salumi locali</h3>
+        <h3>€ 10</h3>
+        <p></p>
+      </div>
+      <div class="dish">
+        <h3>Trionfo di verdure grigliate</h3>
+        <h3>€ 10</h3>
+        <p></p>
+      </div>
+      <div class="dish">
+        <h3>Formaggi e latticini tipici regionali</h3>
+        <h3>€ 10</h3>
+        <p></p>
+      </div>
+      <div class="dish">
+        <h3>Insalata all'Italiana</h3>
+        <h3>€ 8</h3>
+        <p>Mozzarella servita con pomodoro, zucchine e basilico fresco</p>
+      </div>
+      <div class="dish">
+        <h3>Insalata mista completa</h3>
+        <h3>€ 8</h3>
+        <p>Con olive, carote, anguria, tonno e mozzarella fresca</p>
+      </div>
+      <div class="dish">
+        <h3>Insalata di Grano</h3>
+        <h3>€ 8</h3>
+        <p></p>
+      </div>
+    </div>
+  </div><!-- /#main -->
 </body>
 <script>
   /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
