@@ -2,13 +2,15 @@
 
 :root {
   --primary-color: #2c140a;
+  --secondary-color: #cca866;
+  --tertiary-color: ;
 }
 html {
   font-family: 'Cormorant Garamond', serif;
   height: 100%;
 }
 body {
-  background-color: #cca866;
+  background-color: var(--secondary-color);
 }
 a {
   display: grid;
@@ -16,17 +18,28 @@ a {
   color: var(--primary-color);
   margin: .6rem;
 }
+h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin: 0;
+  padding-top: 3px;
+}
+p {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
 #main {
-  margin-top: 0;
+  margin: 0;
 }
 #nav{
   position: fixed;
   display: flex;
   width: 100%;
-  padding-top: 1rem;
+  padding: .8rem;
   top: 0;
-  left: 10px;
-  background-color: #cca866;
+  left: 0;
+  background-color: #e7c179;
+  box-shadow: 0 3px 8px 1px rgba(0,0,0,.8);
 }
 #logo {
   display: grid;
@@ -39,7 +52,25 @@ a {
   margin-top: 20px;
 }
 #content {
-  margin-top: 7rem;
+  display: grid;
+  margin-top: 8rem;
+  width: 100%;
+}
+.dish {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+button.dish {
+  font: inherit;
+  text-align: left;
+  background-color: rgba(255,255,255,0.2);
+  border: none;
+  margin: 10px 0 0 0;
+  width: 100%;
+  /* border: 1px solid var(--primary-color); */
+}
+.price {
+  text-align: right;
 }
 .inside > img{
   width: 80%;
@@ -57,4 +88,16 @@ a {
 .mdi-menu {
   font-size: 2rem;
   margin: 0;
+}
+.mdi-menu-down {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  place-self: end;
+}
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }

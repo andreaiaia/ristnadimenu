@@ -29,75 +29,132 @@
     </div>
 
     <div id="content">
-      <div class="dish">
+      <button class="dish">
         <h3>Antipasto Nadì</h3>
-        <h3>€ 14</h3>
+        <h3 class="price">€ 14</h3>
         <p>Peperoni, zucchine, melanzane</p>
+        <div class="mdi mdi-menu-down"></div>
+      </button>
+      <div class="content">
+        <p>Presto qui ci sarà una foto succulenta</p>
       </div>
-      <div class="dish">
+      <button class="dish">
         <h3>Antipasto Lucano</h3>
-        <h3>€ 12</h3>
+        <h3 class="price">€ 12</h3>
         <p>Mix di salumi e formaggi lucani</p>
+        <div class="mdi mdi-menu-down"></div>
+      </button>
+      <div class="content">
+        <p>Presto qui ci sarà una foto succulenta</p>
       </div>
-      <div class="dish">
+      <button class="dish">
         <h3>Carpaccio di Manzo al tartufo nero lucano</h3>
-        <h3>€ 18</h3>
+        <h3 class="price">€ 18</h3>
         <p>Con limone e parmigiano</p>
+        <div class="mdi mdi-menu-down"></div>
+      </button>
+      <div class="content">
+        <p>Presto qui ci sarà una foto succulenta</p>
       </div>
-      <div class="dish">
+      <button class="dish">
         <h3>Prosciutto Crudo di Parma con Burratina</h3>
-        <h3>€ 12</h3>
+        <h3 class="price">€ 12</h3>
         <p></p>
+        <div class="mdi mdi-menu-down"></div>
+      </button>
+      <div class="content">
+        <p>Presto qui ci sarà una foto succulenta</p>
       </div>
-      <div class="dish">
+      <button class="dish">
         <h3>Prosciutto Crudo di Parma con Melone</h3>
-        <h3>€ 12</h3>
+        <h3 class="price">€ 12</h3>
         <p></p>
+        <div class="mdi mdi-menu-down"></div>
+      </button>
+      <div class="content">
+        <p>Presto qui ci sarà una foto succulenta</p>
       </div>
-      <div class="dish">
+      <button class="dish">
         <h3>Affettato misto di salumi locali</h3>
-        <h3>€ 10</h3>
+        <h3 class="price">€ 10</h3>
         <p></p>
+        <div class="mdi mdi-menu-down"></div>
+      </button>
+      <div class="content">
+        <p>Presto qui ci sarà una foto succulenta</p>
       </div>
-      <div class="dish">
+      <button class="dish">
         <h3>Trionfo di verdure grigliate</h3>
-        <h3>€ 10</h3>
+        <h3 class="price">€ 10</h3>
         <p></p>
+        <div class="mdi mdi-menu-down"></div>
+      </button>
+      <div class="content">
+        <p>Presto qui ci sarà una foto succulenta</p>
       </div>
-      <div class="dish">
+      <button class="dish">
         <h3>Formaggi e latticini tipici regionali</h3>
-        <h3>€ 10</h3>
+        <h3 class="price">€ 10</h3>
         <p></p>
+        <div class="mdi mdi-menu-down"></div>
+      </button>
+      <div class="content">
+        <p>Presto qui ci sarà una foto succulenta</p>
       </div>
-      <div class="dish">
+      <button class="dish">
         <h3>Insalata all'Italiana</h3>
-        <h3>€ 8</h3>
+        <h3 class="price">€ 8</h3>
         <p>Mozzarella servita con pomodoro, zucchine e basilico fresco</p>
+        <div class="mdi mdi-menu-down"></div>
+      </button>
+      <div class="content">
+        <p>Presto qui ci sarà una foto succulenta</p>
       </div>
-      <div class="dish">
+      <button class="dish">
         <h3>Insalata mista completa</h3>
-        <h3>€ 8</h3>
+        <h3 class="price">€ 8</h3>
         <p>Con olive, carote, anguria, tonno e mozzarella fresca</p>
+        <div class="mdi mdi-menu-down"></div>
+      </button>
+      <div class="content">
+        <p>Presto qui ci sarà una foto succulenta</p>
       </div>
-      <div class="dish">
+      <button class="dish">
         <h3>Insalata di Grano</h3>
-        <h3>€ 8</h3>
+        <h3 class="price">€ 8</h3>
         <p></p>
+        <div class="mdi mdi-menu-down"></div>
+      </button>
+      <div class="content">
+        <p>Presto qui ci sarà una foto succulenta</p>
       </div>
     </div>
   </div><!-- /#main -->
 </body>
 <script>
-  /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+/* Set the width of the side navigation to 250px */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
 }
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+/* Set the width of the side navigation to 0 */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
 } 
+
+var coll = document.getElementsByClassName("dish");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
 </script>
 </html>
