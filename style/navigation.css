@@ -1,4 +1,11 @@
- /* The side navigation menu */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+
+:root {
+  --primary-color: #2c140a;
+  --secondary-color: #cca866;
+  --tertiary-color: #b19156;
+}
+/* The side navigation menu */
  .sidenav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -6,7 +13,7 @@
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black*/
+  background-color: var(--tertiary-color); /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -14,17 +21,22 @@
 
 /* The navigation menu links */
 .sidenav a {
+  font-family: 'Cormorant Garamond', serif;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #222222;
   display: block;
   transition: 0.3s;
+}
+.menuLink {
+  border-bottom: 1px solid var(--primary-color);
+  text-align: center;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #2e2e2e;
 }
 
 /* Position and style the close button (top right corner) */
