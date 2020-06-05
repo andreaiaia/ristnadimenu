@@ -3,14 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.1.45/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../style/navigation.css">
   <link rel="stylesheet" href="../../style/style.css">
   <title>Caffetteria</title>
 </head>
 <body>
-  <div id="logo">
-    <img src="../../img/logo-nadi.png" alt="logo">
-  </div>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="aperitivi.html" class="menuLink">Aperitivi</a>
+    <a href="antipasti.html" class="menuLink">Antipasti</a>
+    <a href="primiPiatti.html" class="menuLink">Primi Piatti</a>
+    <a href="secondiBrace.html" class="menuLink">Secondi, Piatti alla brace e Contorni</a>
+    <a href="contorni.html" class="menuLink">Contorni</a>
+    <a href="fruttaDolci.html" class="menuLink">Frutta e Dolci</a>
+    <a href="gelati.html" class="menuLink">Gelati</a>
+    <a href="bevande.html" class="menuLink">Bevande</a>
+    <a href="birreArtigianali.html" class="menuLink">Birre Artigianali</a>
+    <a href="caffetteria.html" class="menuLink">Caffetteria</a>
+    <a href="digestiviAmari.html" class="menuLink">Digestivi e Amari</a>
+    <a href="grappe.html" class="menuLink">Grappe</a>  </div>
 
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div id="main">
+    <div id="nav">
+      <p onclick="openNav()" class="mdi mdi-menu"></p>
+      <div id="logo" class="inside">
+        <a href="../../index.html">
+          <img src="../../img/logo-nadi.png" alt="logo">
+        </a>
+      </div>
+    </div>
 
+    <div id="content">
+      <button class="dish">
+        <h3>Caffè</h3>
+        <h3 class="price">€ 1.50</h3>
+      </button>
+      <button class="dish">
+        <h3>Caffè decaffeinato</h3>
+        <h3 class="price">€ 1.50</h3>
+      </button>
+      <button class="dish">
+        <h3>Caffè d'orzo</h3>
+        <h3 class="price">€ 1.50</h3>
+      </button>
+      <button class="dish">
+        <h3>Caffè corretto</h3>
+        <h3 class="price">€ 2.00</h3>
+      </button>
+      <button class="dish">
+        <h3>Caffè Americano</h3>
+        <h3 class="price">€ 2.50</h3>
+      </button>
+      <button class="dish">
+        <h3>Espressino</h3>
+        <h3 class="price">€ 2.00</h3>
+      </button>
+      <button class="dish">
+        <h3>Cappuccino</h3>
+        <h3 class="price">€ 2.50</h3>
+      </button>
+      <button class="dish">
+        <h3>Irish coffee</h3>
+        <h3 class="price">€ 5.00</h3>
+      </button>
+      <h2>Tè e Tisane</h2>
+      <button class="dish">
+        <h3>English Breakfast</h3>
+        <h3 class="price">€ 2.50</h3>
+      </button>
+      <button class="dish">
+        <h3>English Garden Tea</h3>
+        <h3 class="price">€ 2.50</h3>
+      </button>
+      <button class="dish">
+        <h3>Tè alla pesca</h3>
+        <h3 class="price">€ 2.50</h3>
+      </button>
+      <button class="dish">
+        <h3>Tè ai frutti rossi</h3>
+        <h3 class="price">€ 2.50</h3>
+      </button>
+      <button class="dish">
+        <h3>Tè all'ibisco</h3>
+        <h3 class="price">€ 2.50</h3>
+      </button>
+      <button class="dish">
+        <h3>Lemon ginger</h3>
+        <h3 class="price">€ 2.50</h3>
+      </button>
+      <button class="dish">
+        <h3>Camomilla</h3>
+        <h3 class="price">€ 2.50</h3>
+      </button>
+      <button class="dish">
+        <h3>Tè deteinato</h3>
+        <h3 class="price">€ 2.50</h3>
+      </button>
+    </div>
+  </div><!-- /#main -->
 </body>
+<script>
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+} 
+</script>
 </html>

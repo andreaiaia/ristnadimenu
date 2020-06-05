@@ -18,6 +18,9 @@ a {
   color: var(--primary-color);
   margin: .6rem;
 }
+h2 {
+  text-align: center;
+}
 h3 {
   font-size: 1.5rem;
   color: var(--primary-color);
