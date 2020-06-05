@@ -2,15 +2,18 @@
 
 :root {
   --primary-color: #2c140a;
-  --secondary-color: #cca866;
+  --secondary-color: #e7c179;
   --tertiary-color: #b19156;
 }
+
 html {
   font-family: 'Cormorant Garamond', serif;
   height: 100%;
 }
 body {
-  background-color: var(--secondary-color);
+  background: var(--secondary-color);
+  background: linear-gradient(0deg, var(--tertiary-color) 5.66%, var(--secondary-color) 94.35%);
+  background: -webkit-linear-gradient(0deg, var(--tertiary-color) 5.66%, var(--secondary-color) 94.35%);
 }
 a {
   display: grid;
@@ -42,7 +45,7 @@ p {
   padding-top: .3rem;
   top: 0;
   left: 0;
-  background-color: #e7c179;
+  background-color: var(--secondary-color);
   box-shadow: 0 3px 8px 1px rgba(0,0,0,.8);
 }
 #logo {
