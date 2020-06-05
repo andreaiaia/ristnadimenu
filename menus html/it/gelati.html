@@ -3,14 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.1.45/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../style/navigation.css">
   <link rel="stylesheet" href="../../style/style.css">
   <title>Gelati</title>
 </head>
 <body>
-  <div id="logo">
-    <img src="../../img/logo-nadi.png" alt="logo">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="aperitivi.html" class="menuLink">Aperitivi</a>
+    <a href="antipasti.html" class="menuLink">Antipasti</a>
+    <a href="primiPiatti.html" class="menuLink">Primi Piatti</a>
+    <a href="secondiBrace.html" class="menuLink">Secondi, Piatti alla brace e Contorni</a>
+    <a href="contorni.html" class="menuLink">Contorni</a>
+    <a href="fruttaDolci.html" class="menuLink">Frutta e Dolci</a>
+    <a href="gelati.html" class="menuLink">Gelati</a>
+    <a href="bevande.html" class="menuLink">Bevande</a>
+    <a href="birreArtigianali.html" class="menuLink">Birre Artigianali</a>
+    <a href="caffetteria.html" class="menuLink">Caffetteria</a>
+    <a href="digestiviAmariGrappe.html" class="menuLink">Digestivi, Amari e Grappe</a>
   </div>
+  
+  <!-- Use any element to open the sidenav -->
+  
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div id="main">
+    <div id="nav">
+      <p onclick="openNav()" class="mdi mdi-menu"></p>
+      <div id="logo" class="inside">
+        <a href="../../index.html">
+          <img src="../../img/logo-nadi.png" alt="logo">
+        </a>
+      </div>
+    </div>
 
-
+    <div id="content">
+      <button class="dish">
+        <h3>Semifreddo al mandarino</h3>
+        <h3 class="price">€ 5.00</h3>
+        <p></p>
+        <div class="mdi mdi-menu-down"></div>
+      </button>
+      <div class="content">
+        <p>Presto qui ci sarà una foto succulenta</p>
+      </div>
+      <button class="dish">
+        <h3>Tartufo</h3>
+        <h3 class="price">€ 5.00</h3>
+        <p>Cocco, noce, cioccolato, cioccolato bianco</p>
+        <div class="mdi mdi-menu-down"></div>
+      </button>
+      <div class="content">
+        <p>Presto qui ci sarà una foto succulenta</p>
+      </div>
+      <button class="dish">
+        <h3>Minuteria</h3>
+        <h3 class="price">€ 5.00</h3>
+        <p>Pasticcini ripieni di gelato</p>
+        <div class="mdi mdi-menu-down"></div>
+      </button>
+      <div class="content">
+        <p>Presto qui ci sarà una foto succulenta</p>
+      </div>
+      <button class="dish">
+        <h3>Fruttini gelato</h3>
+        <h3 class="price">€ 5.00</h3>
+        <p>Ripieni di gelato con frutta fresca</p>
+        <div class="mdi mdi-menu-down"></div>
+      </button>
+      <div class="content">
+        <p>Presto qui ci sarà una foto succulenta</p>
+      </div>
+      <button class="dish">
+        <h3>Bon bon al gelato</h3>
+        <h3 class="price">€ 5.00</h3>
+        <p>Palline di gelato di vari gusti ricoperte di cioccolato</p>
+        <div class="mdi mdi-menu-down"></div>
+      </button>
+      <div class="content">
+        <p>Presto qui ci sarà una foto succulenta</p>
+      </div>
+      <button class="dish">
+        <h3>Coppa del contadino</h3>
+        <h3 class="price">€ 5.00</h3>
+        <p>Semifreddo ricotta fresca e pere</p>
+        <div class="mdi mdi-menu-down"></div>
+      </button>
+      <div class="content">
+        <p>Presto qui ci sarà una foto succulenta</p>
+      </div>
+      <button class="dish">
+        <h3>Semifreddo tartufone</h3>
+        <h3 class="price">€ 5.00</h3>
+        <p>Vaniglia con gelato al cioccolato al rum</p>
+        <div class="mdi mdi-menu-down"></div>
+      </button>
+      <div class="content">
+        <p>Presto qui ci sarà una foto succulenta</p>
+      </div>
+      <button class="dish">
+        <h3>Semifreddo Sacherino</h3>
+        <h3 class="price">€ 5.00</h3>
+        <p>Cioccolato con marmellata all'albicocca</p>
+        <div class="mdi mdi-menu-down"></div>
+      </button>
+      <div class="content">
+        <p>Presto qui ci sarà una foto succulenta</p>
+      </div>
+      <button class="dish">
+        <h3>Liquilemon</h3>
+        <h3 class="price">€ 5.00</h3>
+        <p>Latte, limone con cuore di liquirizia</p>
+        <div class="mdi mdi-menu-down"></div>
+      </button>
+      <div class="content">
+        <p>Presto qui ci sarà una foto succulenta</p>
+      </div>
+    </div>
+  </div><!-- /#main -->
 </body>
+<script>
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+} 
+
+var coll = document.getElementsByClassName("dish");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
 </html>
