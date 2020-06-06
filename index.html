@@ -3,28 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Menù Ristorante Nadì</title>
+  <link rel="stylesheet" href="style/style.css">
+  <title>Menù</title>
 </head>
 <body>
-  <a href="htt://www.ristorantenadi.com" id="logo"><img src="img/logo-nadi.png" alt="logo"></a>
+  <div id="logo">
+    <img src="img/logo-nadi.png" alt="logo">
+  </div>
+
   <div id="language">
-    <div class="card">
-      <a href="menus/it-en-jp.pdf">
-        <img src="img/lang_icons/it-en-jp.png" class="lang" alt="italian, english, japanese">
-        <div class="links">
-          <h2>Menù</h2>
-          <h2>Menus</h2>
-          <h2>メニュー</h2>
-        </div>
-      </a>
-    </div>
-    <div class="card ru">
-      <a href="menus/ru.pdf">
-        <img src="img/lang_icons/ru.png" class="lang" alt="russian">
-        <h2>меню</h2>
-      </a>
-    </div>
+    <button type="button"><img src="img/lang_icons/en.png" alt="English Version"></button>
+    <button type="button"><img src="img/lang_icons/jp.png" alt="Japanese Version"></button>
+    <button type="button"><img src="img/lang_icons/ru.png" alt="Russian Version"></button>
+  </div>
+
+  <div id="courses">
+    <a href="menus/it/aperitivi.html">
+      <button class="menuBtn" type="button">Aperitivi</button>
+    </a>
+    <a href="menus/it/antipasti.html">
+      <button class="menuBtn" type="button">Antipasti</button>
+    </a>
+    <a href="menus/it/primiPiatti.html">
+      <button class="menuBtn" type="button">Primi Piatti</button>
+    </a>
+    <a href="menus/it/secondiBrace.html">
+      <button class="menuBtn" type="button">Secondi e Piatti alla Brace</button>
+    </a>
+    <a href="menus/it/contorni.html">
+      <button class="menuBtn" type="button">Contorni</button>
+    </a>
+    <a href="menus/it/fruttaDolci.html">
+      <button class="menuBtn" type="button">Frutta e Dolci</button>
+    </a>
+    <a href="menus/it/gelati.html">
+      <button class="menuBtn" type="button">Gelati</button>
+    </a>
+    <a href="menus/it/bevande.html">
+      <button class="menuBtn" type="button">Bevande</button>
+    </a>
+    <a href="menus/it/birreArtigianali.html">
+      <button class="menuBtn" type="button">Birre Artigianali</button>
+    </a>
+    <a href="menus/it/caffetteria.html">
+      <button class="menuBtn" type="button">Caffetteria</button>
+    </a>
+    <a href="menus/it/digestiviAmari.html">
+      <button class="menuBtn" type="button">Digestivi e Amari</button>
+    </a>
+    <a href="menus/it/grappe.html">
+      <button class="menuBtn" type="button">Grappe</button>
+    </a>
   </div>
 </body>
 </html>
