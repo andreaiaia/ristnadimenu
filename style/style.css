@@ -125,3 +125,13 @@ button.dish {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
+@media (min-width: 760px) {
+  body {
+    margin: auto;
+    width: 768px;
+  }
+  .tall {
+    margin-bottom: 0;
+  }
+}
