@@ -28,7 +28,7 @@ h3 {
   font-size: 1.5rem;
   color: var(--primary-color);
   margin: 0;
-  padding-top: 3px;
+  margin-top: 3px;
 }
 p {
   margin-top: 1rem;
@@ -80,6 +80,7 @@ p {
 .dish {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  place-items: start;
 }
 button.dish {
   font: inherit;
@@ -91,7 +92,12 @@ button.dish {
   /* border: 1px solid var(--primary-color); */
 }
 .price {
-  text-align: right;
+  justify-self: end;
+}
+.mdi-menu-down {
+  font-size: 1.5rem;
+  justify-self: end;
+  align-self: center;
 }
 .inside > a{
   width: 70%;
@@ -115,18 +121,13 @@ button.dish {
   padding: 0 0 4px;
   font-weight: 500;
 }
-.tall {
-  margin-bottom: 1.8rem;
-}
 .mdi-menu {
   font-size: 2rem;
   margin: 0 0 0 1rem;
   padding-bottom: 8px;
 }
-.mdi-menu-down {
-  font-size: 1.5rem;
-  justify-self: center;
-  align-self: center;
+.tall {
+  margin-bottom: 1.8rem;
 }
 .content {
   padding: 0 18px;
