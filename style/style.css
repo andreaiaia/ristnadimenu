@@ -135,6 +135,9 @@ button.dish {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+.bold {
+  font-style: italic;
+}
 #footer > *{
   font-size: 1.2rem;
 }
