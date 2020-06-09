@@ -112,6 +112,8 @@ button.dish {
   box-shadow: 1px 2px 5px 0px rgba(0,0,0,1);
 }
 .menuBtn > img {
+  min-width: 157px;
+  min-height: 157px;
   width: 100%;
   height: auto;
   margin: 0;
