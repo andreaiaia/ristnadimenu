@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.1.45/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="style/navigation.css">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Menù</title>
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="ptej/menus/it/aperitivi.html" class="menuLink">Aperitivi</a>
+    <a href="ptej/menus/it/bevande.html" class="menuLink">Bevande</a>
+    <a href="ptej/menus/it/birreArtigianali.html" class="menuLink">Birre Artigianali</a>
+    <a href="ptej/menus/it/stuzzicheria.html" class="menuLink">Stuzzicheria</a>
+    <a href="ptej/menus/it/panini.html" class="menuLink">Panini</a>
+  </div>
+
+<div id="main">
+  <div id="nav">
+    <p onclick="openNav()" class="mdi mdi-menu"></p>
+    <div id="logo" class="inside">
+      <a href="#">
+        <img src="img/logo-nadi.png" alt="logo">
+      </a>
+    </div>
+    <div id="languages">
+      <a href="ristorante/indexEn.html"><img src="img/lang_icons/en.png" alt="english_version"></a>
+      <!-- <a href="ristorante/indexJp.html"><img src="img/lang_icons/jp.png" alt="japanese_version"></a>
+      <a href="ristorante/indexRu.html"><img src="img/lang_icons/ru.png" alt="russian_version"></a> -->
+    </div>
+  </div>
+
+  <div id="courses">
+    <a href="ptej/menus/it/aperitivi.html">
+      <button class="menuBtn" type="button">
+        <img src="img/dishes/aperitivi.jpg" alt="aperitivo">
+        <h3>Aperitivi</h3>
+      </button>
+    </a>
+    <a href="ptej/menus/it/bevande.html">
+      <button class="menuBtn" type="button">
+        <img src="img/dishes/bevande.jpg" alt="tagliata_di_manzo">
+        <h3>Bevande</h3>
+      </button>
+    </a>
+    <a href="ptej/menus/it/birreArtigianali.html">
+      <button class="menuBtn" type="button">
+        <img src="img/dishes/birre.jpg" alt="patate_alla_cenere">
+        <h3>Birre Artigianali</h3>
+      </button>
+    </a>
+    <a href="ptej/menus/it/stuzzicheria.html">
+      <button class="menuBtn" type="button">
+        <img src="img/dishes/antipasti.jpg" alt="antipasto_misto">
+        <h3 class="tall">Stuzzicheria</h3>
+      </button>
+    </a>
+    <a href="ptej/menus/it/panini.html">
+      <button class="menuBtn" type="button">
+        <img src="img/dishes/trisNadi.jpg" alt="tris_nadi">
+        <h3>Panini</h3>
+      </button>
+    </a>
+  </div> <!-- / #courses -->
+
+  <div id="footer">
+    <h3>Created by<a href="github.com/andreaiaia">Andrea Bianchi</a></h3>
+  </div>
+</div> <!-- /#main -->
+</body>
+<script src="script/nav.js"></script>
+</html>
